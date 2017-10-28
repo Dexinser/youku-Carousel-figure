@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carousel figure</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.wrapper {
+			height: 350px;
+			width: 525px;
+			border: 1px solid black;
+			position: relative;
+			overflow: hidden;
+			margin: 100px auto;
+		}
+		.wrapper ul{
+			width: 2628px;
+			height: 350px;
+		}
+		.wrapper ul li {
+			float: left;
+		}
+		.wrapper .sliderIndex {
+			position: absolute;
+			bottom: 30px;
+			left: 50%;
+			width: 220px;
+			height: 30px;
+			margin-left: -110px;
+			text-align: center;
+			line-height: 38px;
+		}
+		.wrapper .sliderIndex i {
+			display: inline-block;
+			margin: 4px 10px 2px;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: rgba(133,133,133,0.6);
+		}
+		.wrapper .sliderIndex i.active {
+			background-color: rgba(200, 100,23,1);
+			width: 15px;
+			height: 15px;
+		}
+		.wrapper .btn button.turn{
+			display: block;
+			width: 40px;
+			height: 40px;
+			background-color: rgba(155,155,155,.2);
+			opacity: .5;
+			position: absolute;
+			font-size: 35px;
+			text-align: center;
+			line-height: 40px;
+			border-radius: 5px;
+			border: 1px solid black;
+			top: 155px;
+		}
+		.wrapper .btn button.turnLeft{
+			left: 20px;
+		}
+		.wrapper .btn button.turnRight{
+			right: 20px;
+		}
+		.wrapper .btn button:hover {
+			background-color: rgba(155,155,155,1);
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<ul>
+			<li><img src="1.jpeg" alt=""></li>
+			<li><img src="2.jpeg" alt=""></li>
+			<li><img src="3.jpeg" alt=""></li>
+			<li><img src="4.jpeg" alt=""></li>
+			<li><img src="5.jpeg" alt=""></li>
+		</ul>
+		<div class="btn">
+			<button class="turn turnLeft"><</button>
+			<button class="turn turnRight">></button>
+		</div>
+		<div class="sliderIndex">
+			<i class="active"></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
